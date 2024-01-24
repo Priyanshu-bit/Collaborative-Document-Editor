@@ -1,0 +1,61 @@
+/* Add a global reset to remove default margin and padding */
+body, div, h1, h2, h3, p, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-container {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  margin-top: 30vh;
+}
+
+.signup-container > div {
+  margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #02030a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00e30c;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 600px) {
+  .signup-container {
+    width: 80%;
+  }
+}
